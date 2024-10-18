@@ -280,6 +280,10 @@ document.addEventListener("DOMContentLoaded", function() {
             alert('Password cannot be empty.');
             return; // Stop further execution
         }
+        if(password.length<8){
+            alert('Password must be at least 8 characters long.');
+            return;
+        }
 
         if (password !== confirm) {
             alert('Passwords do not match'); // Alert if passwords do not match
