@@ -1,0 +1,80 @@
+.create-head
+{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    
+}
+.form{
+    padding-left:  40%;
+    
+}
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="tel"] {
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.form input[type="text"]:focus,
+.form input[type="password"]:focus,
+.form input[type="email"]:focus,
+.form input[type="tel"]:focus{
+
+    background-color: gray;
+    color: white;
+    outline: none;
+
+}
+label{
+    color: black;
+    font-weight: 600;
+}
+
+input[type="submit"]{
+    background-color: #4CAF50;
+    font-size: 12pt;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+/*Form styling for the service form*/
+.request-head{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 100%;
+}
+.request-form{
+    margin-left: 30%;
+}
+.request-form input[type="text"],
+.request-form input[type="tel"],
+.request-form input[type="email"]
+{
+    width: 85%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.request-form textarea{
+    width: 45%;
+    height: 100px;
+    margin-top: 15px;
+}
+#title{
+    font-size: 30px;
+    background-color: black;
+    padding: 12px;
+    color: white;
+}
+
+#sub{
+    border-radius: 20px;
+    background-color: grey;
+    padding: 5px 5px;
+    color: white;
+    font-size: 12pt;
+    font-weight: 600;
+    box-shadow: 2px 2px 30px black;
+}

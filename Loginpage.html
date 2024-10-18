@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Log In
+        </title>
+        <link rel="stylesheet" href="passwowrd.css">
+        <script src="https://kit.fontawesome.com/8bdeb1794c.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <div class="menu">
+            <a href="./index.html">Back to Shopping page</a>
+        </div>
+        <div class="box">
+            <div class="container">
+                <div class="top-header">
+
+                    <span> <a href="./Create_new_account.html">Create account</a></span>
+
+                    <header>Login</header>
+
+                </div>
+                
+                <form id="loginForm">
+                    <div class="input-feild">
+                        <label for="lusername"> Username/Email</label>
+                        <input type="text" class="input" name="lusername" id="username" placeholder="Username/Email" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    
+                    <div class="input-feild" >
+                        <label for="log-password"> Password</label>
+                        <input id="login-password" name="log-password" type="password" class="input" placeholder="Enter password" required>
+    
+                        <i class="fa-solid fa-unlock"></i>
+                    </div>
+    
+                    <div class="input-feild">
+    
+                        <input id="login-submit" type="submit" class="submit" value="Login" onclick="login(event)">
+                        <i  class="fa-solid fa-arrow-right-to-bracket"></i>
+    
+                    </div>
+                    <div class="button">
+                        <div class="left">
+                            <input type="checkbox" id="check">
+                            <label for="check">Remember Me!</label>
+                        </div>
+    
+                        <div class="right">
+    
+                            <label href="#">Forget Password?</label>
+                        </div>
+                    </div>
+                </form>
+
+               <div class="warning">
+                    <p>If you forget your password click select password </p>
+                    <i class="fa-thin fa-exclamation"></i>
+                </div> 
+            </div>
+        </div>
+        <script type="text/javascript" src="commerce-js.js"></script>
+        
+    </body>
+</html>

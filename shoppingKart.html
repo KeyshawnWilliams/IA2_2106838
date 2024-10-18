@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping Cart</title>
+    <script src="https://kit.fontawesome.com/8bdeb1794c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="kart.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href=""><img  src="../images/Logo.png" alt="" width="50%" height="80%"></a><!--Add logo-->
+            <div >
+                <ul id="navbar1">
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li> <a href="./Loginpage.html">Login</a></li>
+                    <li><a href="./About_Us.html">About Us</a></li>
+                    <li><a href="./Products.html">Products</a></li>
+                    <li><a href="./shoppingKart.html"><i id="bag" class="fa-solid fa-bag-shopping active"></i></a></li>
+                    <li><a href="./Create_new_account.html"><span class="create_account">Create New Account</span></a><!--add border and background--></li>
+                    <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                <i id="bar" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div id="login"> </div>
+    </header><!--End of header section-->
+    <section id="cart-head">
+        <div  class="cart-head-title">
+
+            <div> <strong>Shopping Cart</strong></div>
+
+        </div>
+    </section>
+    <section id="cart-products">
+        <table>
+            <thead>
+                <tr>
+                    <th>Remove Item</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Items will be dynamically added here -->
+            </tbody>
+        </table>
+    
+        <div id="empty-cart" class="empty-message">
+            <!-- JS will control this message -->
+        </div>
+    </section>
+
+    <section class="shop-button">
+        <button  onclick="window.location='invoice.html'">Checkout</button>
+    </section>
+    
+
+<footer class="sec-padding"><!--footer section-->
+    <div id="contact" class="column">
+        <img class="logo" src="../images/Logo.png" alt=""  width="30%" height="60%">
+        <h4>Contact</h4>
+        <p><strong>Phone: 876 - 222-9999 </strong> </p>
+        <p><a href="mailto:keyshawnswilliams@student.utech.edu.jm"><strong>Email: keyshawnswilliams@student.utech.edu.jm </strong> </a></p>
+        <div class="follow">
+            <h4>Follow us:</h4>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook fb"></i></a>
+            <a href="https://www.twitter.com/"><i class="fab fa-twitter twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram ig"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube youtube"></i></a>
+
+        </div>
+    </div><!--end of first column-->
+    <div class=" column">
+        <h4>About</h4>
+        <a href="./About_Us.html">About  Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Help</a>
+        <a href="#">Associated companies</a>
+
+    </div><!--end of second column-->
+    <div class="column"><!--third column-->
+        <h4>My Account</h4>
+        <a href="#">Login</a>
+        <a href="#">View Cart</a>
+    </div><!--end of third column-->
+    <div class="column">
+        <h4>Payment Options</h4>
+        <p>Bank Transfer</p>
+        <p>All cheques must be made out to Tracey Williams</p>
+    </div>
+   </footer><!--end of footer-->
+   <div class="copyright">
+    &copy;Keyshawn_2016838_IA2
+</div>
+       <script type="text/javascript" src="commerce-js.js"></script>
+       <script>
+        window.onload = displayCart;
+   </script>
+</body>
+</html>

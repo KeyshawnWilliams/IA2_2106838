@@ -1,0 +1,131 @@
+#product-head{
+    width: 98%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    box-shadow: 6px 8px 8px 16px blue inset;
+    
+}
+.header-background{
+    animation: blink-background  2s infinite;
+
+}
+#product-head h1{
+    font-size: 55px;
+    background: -webkit-linear-gradient( red,rgb(15, 15, 15));
+    background-clip: padding-box;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*page numbers*/
+#pagenumber{
+    text-align: center;
+
+
+}
+#pagenumber a{
+    text-decoration: none;
+    background-color:aqua ;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: black;
+    font-weight: 600;
+}
+#pagenumber a i{
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+/* Single Product Page*/
+#pro-details {
+    display: flex;
+    margin-top: 20px;
+}
+
+#pro-details .singleimage {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-images {
+    display: flex;
+    justify-content: space-between;
+}
+.smallimgcolumn {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#pro-details .prod-details {
+    width: 50%;
+    padding-top: 30px;
+}
+
+.prod-details button{
+    background-color: rgb(2, 69, 17);
+    font-weight: 600;
+    font-size: 12pt;
+    border-radius: 4px;
+    padding: 4px 5px;
+    color: white;
+}
+.prod-details input[type="number"]{
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+}
+.prod-details input[type="number"]:focus{
+    outline: none;
+}
+#pro-details .prod-details h4{
+    padding: 0 0 0 0;
+}
+#pro-details .prod-details select{
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px 10px ;
+}
+#pro-details .prod-details span{
+    line-height: 25px;
+}
+.small-img {
+    position: relative; /* Required for the absolute positioning of ::after */
+}
+  
+.smallimg.active::after{
+    content: "";
+    color: aqua;
+    position: absolute;
+    width: 50%;
+    height : 2px;
+    bottom: -4px;
+    left: 20%;
+}
+.fet-container .pro span{
+    font-size: 20px;
+    font-weight: 600;
+}
+button{
+    background-color: silver;
+    padding: 5px 8px;
+    border-radius: 4px;
+    margin-left: 85%;
+}
+button a{
+    font-size: 14pt;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes blink-background {/*control the  blink animation for the product page*/
+
+    0% { background-color: #f3c340; }  /* Red */
+    50% { background-color: #45ea42; } /* Light Blue */
+    100% { background-color: #f3c340; } /* Back to Red */
+}

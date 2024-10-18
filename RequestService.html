@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <!--Links-->
+       <link rel="stylesheet" href="main.css">
+       <link rel="stylesheet" href="new_account.css">
+       <script src="https://kit.fontawesome.com/8bdeb1794c.js" crossorigin="anonymous"></script>
+   
+   
+       <!--Links end-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Service</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href=""><img  src="../images/Logo.png" alt="" width="50%" height="80%"></a><!--Add logo-->
+            <div >
+                <ul id="navbar1">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li> <a href="./Loginpage.html">Login</a></li>
+                    <li><a href="./About_Us.html">About Us</a></li>
+                    <li><a href="./Products.html">Products</a></li>
+                    <li><a href="./shoppingKart.html"><i id="bag" class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li><a href="./Create_new_account.html"><span class="create_account">Create New Account</span></a><!--add border and background--></li>
+                    <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                <i id="bar" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div id="login"> </div>
+    </header><!--End of header section-->
+    <div class="request-head">
+        <h1 id="title">Request Form</h1>
+        <p id="instructions">Please use the form below to tell us which of our services you  are interested in.</p>
+    </div>
+    <section class="request-form">
+        <form action="">
+            <label for="fullname">Name:</label><br>
+            <input type="text" name="fullname" id="fullname" placeholder="Enter full name" required><br>
+
+            <label for="Phone-Number">Phone</label><br>
+            <input type="text" name="Phone-Number" id="Phone" required><br>
+
+            <label for="Address">Address</label><br>
+            <input type="text" name="Address" id="Address" required><br>
+
+            <label for="Request-email">Email</label><br>
+            <input type="email" name="Request-email" id="Request-email"  required><br>
+
+
+            <div>What service or services would you like?</div>
+            
+            <input type="checkbox" name="small-home" id="small-home">
+            <label for="small-home">Small Home</label><br>
+
+            <input type="checkbox" name="painting" id="small-home">
+            <label for="painting">Painting</label><br>
+
+            <input type="checkbox" name="Trucking-Service" id="Trucking-Service">
+            <label for="Trucking-Service">Trucking Service</label><br>
+
+            <input type="checkbox" name="plumbbing" id="plumbbing">
+            <label for="plumbbing">Plumbing</label><br><br>
+
+            <label for="info">Tell us about you project</label><br>
+            <textarea name="info" id="info">
+
+            </textarea><br>
+            <label for="estimate">Do you have an  estimate?</label><br>
+            <select name="estimate" id="">
+                <option value="Select"  disabled selected> Select</option>
+                <option value="yes">YES</option>
+                <option value="no">NO</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit" id="sub">
+
+
+        </form>
+    </section>
+    <footer class="sec-padding"><!--footer section-->
+        <div class="column">
+            <img class="logo" src="../images/Logo.png" alt=""  width="30%" height="60%">
+            <h4>Contact</h4>
+            <p><strong>Phone: </strong> </p>
+            <p><strong>Email: </strong> </p>
+            <div class="follow">
+                <h4>Follow us:</h4>
+                <i class="fab fa-facebook fb"></i>
+                <i class="fab fa-twitter twitter"></i>
+                <i class="fab fa-instagram ig"></i>
+                <i class="fab fa-youtube youtube"></i>
+
+            </div>
+        </div><!--end of first column-->
+        <div class=" column">
+            <h4>About</h4>
+            <a href="#">About  Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Help</a>
+            <a href="#">Associated companies</a>
+
+        </div><!--end of second column-->
+        <div class="column"><!--third column-->
+            <h4>My Account</h4>
+            <a href="#">Login</a>
+            <a href="#">View Cart</a>
+        </div><!--end of third column-->
+        <div class="column">
+            <h4>Payment Options</h4>
+            <p>Bank Transfer</p>
+            <p>All cheques must be made out to Tracey Williams</p>
+        </div>
+       </footer><!--end of footer-->
+    
+</body>
+</html>

@@ -1,0 +1,104 @@
+
+/*------------------------------------------------------------------------------SHOPPING CART PAGE RELATED CSS STYLE---------------------------------------------------*/
+table{
+    gap: 25%;
+}
+#cart-products{
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-right: 15%;
+}
+th{
+
+    width: 125px;
+    text-align: center;
+}
+
+#cart-head{
+    background-color: rgba(169, 169, 169, 0.556);
+    margin-top: 3%;
+
+}
+.cart-head-title{
+    margin-left: 45%;
+    font-size: 50px;
+}
+
+#cart-items input[type="number"]{
+    width: 40px;
+}
+
+#cart-items td{
+    width: 45%;
+    padding: 0 35px;
+    text-align: center;
+
+
+}
+#emptyCart{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 68px;
+    font-weight: 700;
+}
+
+/*------------------------------------------------------------------------------INVOICE PAGE RELATED CSS STYLE---------------------------------------------------*/
+#invoice-calculations{
+    text-align: right;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+.buttons{
+    margin-left: 85%;
+}
+.buttons button{
+    width: 30%;
+    height: 15%;
+    padding: 5px 5px;
+    font-size: 12pt;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 10s ease-in;
+}
+
+/* Controlling the buttons background color direction by using the psuedo  
+class :first-child  and :last-child along with :hover */
+
+.buttons button:first-child:hover{
+    background: linear-gradient(to left, blue , white);
+    color: black;
+}
+.shop-button{
+    margin-top: 9%;
+    margin-left: 85%
+}
+.shop-button button{
+    background: linear-gradient(to right, blue, white);
+    padding: 0 5%;
+    border-radius: 4px;
+}
+
+.buttons button:last-child:hover{
+    background: linear-gradient(to right, blue , white);
+    color: black;
+}
+
+.page-header h2{
+    font-weight: 600;
+    margin-left: 5%;
+}
+#date{
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------------Page Responsiveness-------------------------------------------*/
+
+@media (max-width:799px){
+    .buttons button{
+        width: max-content;
+    }
+    .buttons{
+        margin-left: 65%;
+    }
+}
+

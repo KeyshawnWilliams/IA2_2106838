@@ -1,0 +1,431 @@
+
+*{
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    width: 100%;
+}
+/* h tags*/
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+}
+h3{
+    font-size: 25px;
+}
+h4{
+    font-size: 20px;
+}
+h6{
+    font-size: 15px;
+}
+
+/* header and navigation bar*/
+header{
+    position: sticky;   
+    box-shadow: 0 4px 6px  black;
+    padding: 5px 10px;
+    background-color: white;
+    z-index: 999;
+    width: 98%;
+    top: 0;
+    left: 0;
+    border: 0;
+    margin-left: 5px;
+}
+#login{
+    text-align: right;
+    margin-right: 25%;
+    font-weight: 600;
+}
+.header{
+    /* background-color: darkslategray; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#username{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+    display: block;
+    margin-right: 45px;
+}
+#navbar1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 20px;
+}
+#navbar1 li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar1 li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+#navbar1 li a:hover,
+#navbar1 li a.active{
+    color: green;
+    transition: 0.3s ease;/*control the speed at which the color change when the mouse hovers*/
+}
+#navbar1 li a.active::after,
+#navbar1 li a:hover::after{
+    content: "";
+    width: 50%;
+    height : 2px;
+    background-color: green;
+    position: absolute;
+    bottom: -4px;
+    left: 20%;
+
+}
+#close{
+    display: none;
+}
+#mobile{
+    display: none;
+    align-items: center;
+
+}
+.create_account{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(124, 246, 68);
+    padding: 5px 5px;
+}
+/*section space*/
+.sec-padding{
+    padding: 40px 60px;
+}
+
+/*Intro section of the home page*/
+#intro{
+    color: black;
+    background-image: url("../images/Plumbing\ 1.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 5% right 0;
+
+}
+
+/*Product section */
+#products{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#products .products-box{
+    width: 100px;
+    height: 220px;
+    text-align: center;
+    padding:25px 15px ;
+    box-shadow: 20px 20px 34px rgba(128, 128, 128, 0.522);
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin:15px 0 ;
+    cursor: pointer;
+   
+
+}
+#products .products-box:hover{
+    box-shadow: 10px 10px 17px  rgba(128, 128, 128, 0.856);
+    background-color: gray;
+
+}
+#products .products-box img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 20%;
+}
+
+#products .products-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: rgb(85, 47, 255);
+    background-color: lightgray;
+}
+
+/*feature-products*/
+#feature-products{
+    text-align: center;
+}
+
+#feature-products .pro{
+    width: 20%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgb(0,0,0,0.2) ;
+    margin: 15px 15px;
+    transition: 0.2s ease;
+    position: relative;
+}
+#feature-products .pro:hover{
+    box-shadow: 20px 20px 30px rgb(0,0,0,0.6)
+
+}
+#feature-products .pro img{
+    width: 100px;
+    border-radius: 20px;
+    background-color: rgb(100, 86, 86);
+}
+#feature-products .pro .des{
+    text-align: start;
+}
+#feature-products .pro .des span{
+    color: gray;
+    font-size: 12px;
+
+}
+#feature-products .pro .des h5{
+    font-size: 14px;
+    color: darkgray;
+
+}
+#feature-products .pro .des i{
+    color: red;
+    font-size: 12px;
+}
+#feature-products .pro .cart-pos{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    /* font-weight: 500; */
+    color: rgb(4, 6, 151);
+    border-radius: 20px;
+    border: 1px solid aqua;
+    background-color: aqua;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+}
+.fet-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    flex-wrap: wrap;
+
+}
+/*Banner section*/
+#fi-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+#fi-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(../images/banners/home_consultation.jpg);
+    min-width: 580px;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+
+}
+#fi-banner h4{
+    font-weight: 400;
+    font-size: 25px;
+}
+#fi-banner h2{
+    font-weight: 800;
+    font-size: 28px;
+}
+#fi-banner span{
+    font-weight: 400;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+button.whitebut{
+    background-color: aliceblue transparent;
+    color: rgb(0, 255, 13);
+    border: 1px solid black;
+    transition: 0.2s;
+}
+#fi-banner .banner-box:hover button{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+#fi-banner .box2{
+    background-image: url("../images/banners/dump_truck.jpg");
+    color: white;
+
+}
+#banner-2{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+
+}
+/*Second banners*/
+
+#banner-2 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(../images/banners/roof.jpeg);
+    min-width: 30%;
+    height: 20vh;
+    background-size: cover;
+    background-position: top 5%  left 25%;
+    padding: 20px;
+
+}
+#banner-2 h2{
+    color:rgb(255, 255, 255);
+    font-weight: 800;
+}
+#banner-2 h3{
+    color:rgb(255, 0, 0);
+}
+#banner-2 .box3{
+    background-image: url("../images/banners/Dewalt\ work\ boots.jpeg");
+
+}
+#banner-2 .box4{
+    background-image: url("../images/banners/makita.jpg");
+    
+}
+/*Feedback Section*/
+
+/*Footer*/
+footer{
+    width: 91%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 10px;
+    background-color: lightgrey;
+}
+footer .column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+}
+footer .logo{
+    margin-bottom: 20px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    font-weight: 500;
+    margin:0 0 8px 0
+}
+ footer a{
+    text-decoration: none;
+    font-size: 12pt;
+    color: black;
+    margin-bottom: 5px;
+ }
+ /* manipulate the color of the icons*/
+ .ig{
+    color: purple;
+    
+}
+.fb{
+    color: blue;
+}
+.twitter{
+    color: rgba(45, 85, 204, 0.663);
+}
+.youtube{
+    color: red;
+}
+
+.copyright{
+    text-align: center;
+}
+
+@media (max-width: 799px){
+    #navbar1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-decoration: none;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 200px;
+        background-color: white;
+        box-shadow: 0 40px 60px black;
+        padding: 80px 0 0 10px;
+        transition: o.3s;
+        
+    }
+    #navbar1 li{
+        margin-bottom: 25px ;
+    }
+    #navbar1.active{
+        right: 0px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    
+    }
+    #mobile i{
+        padding: 20px;
+        font-size: 24px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        right: 170px;
+        font-size: 15px;
+        color: black;
+
+    }
+    #bag{
+        display: none;
+    }
+
+}
+.more{
+    text-align: right;
+    margin-right: 15%;
+
+}
+.more a{
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.more a:hover{
+    background-color: grey;
+    padding: 5px 5px;
+    color: white;
+}
