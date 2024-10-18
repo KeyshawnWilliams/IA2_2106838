@@ -16,7 +16,7 @@ body::after{
 */
 
 body{
-    background-image: url("../images/login/background.png");
+    background-image: url("images/login/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
